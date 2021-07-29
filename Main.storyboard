@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ISpy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jO2-Af-fcr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cezar" translatesAutoresizingMaskIntoConstraints="NO" id="nvQ-5d-8UE">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nvQ-5d-8UE" firstAttribute="bottom" secondItem="CCd-e4-c0r" secondAttribute="bottom" id="4cG-ke-G5Q"/>
+                                    <constraint firstItem="nvQ-5d-8UE" firstAttribute="leading" secondItem="UO0-gX-85Y" secondAttribute="leading" id="VcN-jO-Rmg"/>
+                                    <constraint firstItem="nvQ-5d-8UE" firstAttribute="top" secondItem="CCd-e4-c0r" secondAttribute="top" id="a0t-JM-oI8"/>
+                                    <constraint firstItem="nvQ-5d-8UE" firstAttribute="trailing" secondItem="CCd-e4-c0r" secondAttribute="trailing" id="fd2-jQ-YxX"/>
+                                    <constraint firstItem="nvQ-5d-8UE" firstAttribute="leading" secondItem="CCd-e4-c0r" secondAttribute="leading" id="tu7-01-WmK"/>
+                                    <constraint firstItem="nvQ-5d-8UE" firstAttribute="top" secondItem="UO0-gX-85Y" secondAttribute="top" id="vg4-W3-tfq"/>
+                                    <constraint firstItem="UO0-gX-85Y" firstAttribute="bottom" secondItem="nvQ-5d-8UE" secondAttribute="bottom" id="wEx-uj-E2t"/>
+                                    <constraint firstItem="nvQ-5d-8UE" firstAttribute="trailing" secondItem="UO0-gX-85Y" secondAttribute="trailing" id="zkf-ZK-Uuy"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="CCd-e4-c0r"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="UO0-gX-85Y"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jO2-Af-fcr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7Bx-Bn-PDX"/>
+                            <constraint firstItem="jO2-Af-fcr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ayk-tW-Ofz"/>
+                            <constraint firstItem="jO2-Af-fcr" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dDj-7z-I36"/>
+                            <constraint firstItem="jO2-Af-fcr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="g15-J3-QXX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="nvQ-5d-8UE" id="Obg-ff-PpH"/>
+                        <outlet property="scrollView" destination="jO2-Af-fcr" id="hbQ-8I-52d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cezar" width="1925" height="3840"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
